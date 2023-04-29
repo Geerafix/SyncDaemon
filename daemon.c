@@ -100,7 +100,7 @@ void copySmallFile(char *path_to_src, char *path_to_dest)
 
      // wysłanie informacji do logu systemowego o skopiowaniu pliku
      openlog("DAEMON_COPY", LOG_PID | LOG_CONS, LOG_USER);
-     syslog(LOG_INFO, "Skopiowano plik %s do %s", path_to_src, path_to_dest);
+     syslog(LOG_INFO, "Skopiowano maly plik %s do %s", path_to_src, path_to_dest);
      closelog();
      return;
 }
@@ -233,7 +233,7 @@ void copyBigFile(char *path_to_src, char *path_to_dest)
 
      // wysłanie informacji do logu systemowego o skopiowaniu pliku
      openlog("DAEMON_COPY", LOG_PID | LOG_CONS, LOG_USER);
-     syslog(LOG_INFO, "Skopiowano plik %s do %s", path_to_src, path_to_dest);
+     syslog(LOG_INFO, "Skopiowano duzy plik %s do %s", path_to_src, path_to_dest);
      closelog();
      return;
 }
